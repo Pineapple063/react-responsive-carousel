@@ -278,6 +278,7 @@ export default class Thumbs extends Component<Props, State> {
         const currentPosition = -this.state.firstItem * (this.state.itemSize || 0);
 
         const transformProp = CSSTranslate(currentPosition, 'px', this.props.axis);
+        console.log("tp", transformProp);
 
         const transitionTime = this.props.transitionTime + 'ms';
 
